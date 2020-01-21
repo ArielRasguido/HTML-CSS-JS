@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+	  <h1 id="title" onclick="saygoodbye();">
+	  	Hola
+	  </h1>
+      <script type="text/javascript">
+      	function saygoodbye(){
+            $("#title").html("Adios");
+            $("#title").click(
+            	function(){
+            		$("#title").html("Hola");
+            		$("#title").off("click");
+            	}
+
+
+            	);
+      	}
+
+      </script>
+	</body>
+</html>
